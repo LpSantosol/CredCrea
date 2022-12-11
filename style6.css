@@ -6,9 +6,10 @@ rgb(207,222,228)
 rgb(0,169,206)
 */
 
-@media screen and (max-width: 668px)  { 
 
-    
+@media screen and (min-width: 1101px)  { 
+
+
 
 
 * {
@@ -23,88 +24,94 @@ rgb(0,169,206)
 }
 
 body {
-   
+    
     background-color: rgb(207,222,228);
 }
 
 header {
-    
-
-    padding-top: 32px;
     width: 100vw;
-    height: 145px;
+    height: 90px;
 
     background-color: rgb(22,92,125);
 
 }
 
 header > nav > img {
-    margin-left: 30px;
+    margin-top: 25px;
+    margin-left: 280px;
+
 }
 
 header > nav > p {
-    font-size: 14px;
-    padding-left: 30px;
-    margin-top: 5px;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-bottom: 40px;
+    
     color: white;
 }
 
 
 section {
-    width: 100vw;
-    height: 320px;
-    margin-top: 12px;
+   
+    margin-left: 200px;
+    margin-top: 40px;
+    border-radius: 5px;
+    width: 950px;
+    height: 415px;
+    
     background-color: white;
 }
 
 ul {
-  
-   
+    padding: 15px;
+    vertical-align: middle;
 }
 
 li {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-165%, 5%);
-    display: inline-block;
-    
+    display: inline-flex;
+  
 }
 
 span {
-    font-weight: 600;
-    color: #b6b7b9;
     display: block;
-    font-size: small;
+    
+ 
+    color: #7e7d7d;
+    font-weight: bolder;
+    vertical-align: middle;
+    
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    
 }
 
 #icone1 {
-    margin-left: 30px;
-    
-     color: #b6b7b9;
-    border-radius: 50%;
-  
+    color: #7e7d7d;
+ 
 }
 
 #icone2 {
-    margin-left: 50px;
+    color: #7e7d7da9;
 
 }
 
 #icone3 {
-    margin-left: 40px;
+    color: #7e7d7d4f;
 }
 
 #frase2 {
-    font-weight: 100;
-    color: black;
-    margin-left: 30px;
+    font-weight: 450;
+    color: #7e7d7da9;
 }
 
 #frase3 {
-    font-weight: 100;
-    color: black;
+    font-weight: 450;
+    color: #7e7d7db6;
+}
+
+#flecha {
+    
+   vertical-align: text-top;
 }
 
 
@@ -115,7 +122,7 @@ form {
 
 footer {
     width: 100vw;
-    height: 250px;
+    height: 120px;
 
     font-family: 'Open Sans',sans-serif;
     padding: 5px;
@@ -128,41 +135,24 @@ footer {
 
 div#fundo {
     width: 100vw;
-    height: 100vh;
+    height: 76vh;
     background-color: rgb(207,222,228);
 
 
 }
 
-ul {
-    margin-left: 20px;
-}
-
-li {
-    display: inline-block;
-    padding: 20px;
-    
-}
-
-
 
 hr#login {
     border: 0;
     border-top: 1px solid rgb(207, 207, 207);
-    margin-top: 17px;
-    margin-bottom: 20px;
     margin-left: 10px;
-    width: 95vw;
+    width: 910px;
     
 }
 
 .etapas {
     background-color: rgb(0, 0, 0);
     padding: 5px;
-
-}
-
-div#faleconosco {
 
 }
 
@@ -178,19 +168,19 @@ p#recaptcha {
 
 
 input#botentrar {
-    margin-top: 15px;
-    margin-left: 10px;
-
+   
+    display: block;
+    margin-left: 390px;
+    margin-top: 20px;
     height: 40px;
-    width: 95vw;
+    width: 90px;
 
     background-color: rgb(0,169,206);
     color: white;
 
     border: none;
     border-radius: 30px;
-    font-weight: bolder;
-    
+    font-weight: bolder; 
     
 }
 
@@ -200,75 +190,67 @@ input#botentrar:hover {
    
 }
 
-label#acesso  {
-    
+label#acesso {
+    display: block;
     padding: 10px;
+
+    margin-left: 172px;
     
-    font-size: 11.5px;
+
+    margin-top: 48px; 
+
+    font-size: 12px;
     font-weight: bolder;
     font-family: 'Open Sans',sans-serif;
-    color: rgb(22,92,125);
+    color: rgb(18, 81, 110);
 }
+
 
 #digite {
-    width: 95vw;
+   
+   margin-left: 180px;
+    width: 300px;
     height: 40px;
     
     padding: 10px;
-    margin-top: 10px;
+    
 
-    border: 1px solid #b6b7b9;
-    margin-left: 10px;
-       
+    border: 1px solid #b6b7b9;       
     display: block;
     
-    font-size: 0.8em;
-    font-weight: 550;
+    font-size: 14px;
+    
  
 }
-
-label#lsecreta {
-    padding: 10px;
-    
-    font-size: 11.5px;
-    font-weight: bolder;
-    font-family: 'Open Sans',sans-serif;
-    color: rgb(22,92,125);
-}
-
-
-#secreta {
-    width: 95vw;
-    height: 40px;
-    
-    padding: 10px;
-    margin-top: 10px;
-
-    border: 1px solid #b6b7b9;
-    margin-left: 10px;
-       
-    display: block;
-    
-    font-size: 0.8em;
-    font-weight: 550;
- 
-}
-
 
 .botaofooter {
+    display: inline-flex;
+    margin-left: 100px;
+    width: 220px;
     font-size: 12px;
     font-weight: 600;
     color: white;
-    padding: 15px;
+   
+}
+
+#botaofooter2 {
+
+    
 }
 
 .spanfooter {
-    padding-top: 10px;
-    margin-top: 13px;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 100px;
+   
+   
+    padding: 8px;
+    padding-left: 23px;
+   
     color: white;
      
-    width: 95vw;
-    height: 45px;
+    height: 43px;
+    width: 160px;
     
     text-decoration: none;
    
@@ -276,16 +258,21 @@ label#lsecreta {
     border-radius: 20px;
     text-align: center;
     cursor: pointer;
+    font-size: small;
 }
 
 span.spanfooter:hover {
     background-color: rgb(13, 42, 48);
 }
 
+.linkfooter {
+
+}
 a.linkfooter {
-    
+    font-weight: 500;
     text-decoration: none;
-    color: white;  
+    color: white; 
+    
     
 }
 
@@ -297,12 +284,8 @@ a.linkfooter {
 }
 
 
-
-#flecha {
-    display: none;
-}
-
 #talkwe {
+    
     vertical-align: middle;
     margin-left: 10px;
     color: rgba(255, 255, 255, 0.884);
@@ -332,6 +315,14 @@ div#ajuda:hover {
     border-radius: 50px;
     transition: 0.5s;
 }
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 20
+  }
 
 
 }
